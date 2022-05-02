@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8115661256894470978}
   - component: {fileID: 8115661256894470979}
   - component: {fileID: 8115661256894470980}
-  - component: {fileID: 8115661256894470981}
-  - component: {fileID: 8115661256894470977}
+  - component: {fileID: 5746945937725073312}
+  - component: {fileID: 7486011338925414774}
   m_Layer: 0
   m_Name: BadBall
   m_TagString: Untagged
@@ -83,7 +83,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &8115661256894470981
+--- !u!135 &5746945937725073312
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,7 +96,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8115661256894470977
+--- !u!114 &7486011338925414774
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,7 +105,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8115661256894470982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 633baa0eb6c47c04f8ab2bef1345007a, type: 3}
+  m_Script: {fileID: 11500000, guid: 46ecec4f9d480124f9ea1de32dffe69f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballSpeed: 30

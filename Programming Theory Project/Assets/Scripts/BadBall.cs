@@ -2,17 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BadBall : MonoBehaviour
+// INHERITANCE
+public class BadBall : BallBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    // POLYMORPHISM
+    const int BadPoints = -5;
+    GameManager gameManager;
+
+    public override int ScoreToGive
     {
-        
+        get { return BadPoints;}
+    }
+    private new void Start()
+    {
+        base.Start();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
-    // Update is called once per frame
-    void Update()
+    new void FixedUpdate()
     {
-        
+        base.FixedUpdate();
+    }
+
+    private new void OnTriggerEnter(Collider other)
+    {
+        GivePoints();
+        Destroy(gameObject);
+    }
+
+    // POLYMORPHISM 
+    protected override void GivePoints()
+    {
+        gameManager.playerScore += BadPoints;
     }
 }

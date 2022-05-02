@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3799853668171246490}
   - component: {fileID: 3799853668171246491}
   - component: {fileID: 3799853668171246484}
-  - component: {fileID: 7432199955868441299}
+  - component: {fileID: 4362508804233849307}
   m_Layer: 0
   m_Name: TimeBall
   m_TagString: Untagged
@@ -96,7 +96,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7432199955868441299
+--- !u!114 &4362508804233849307
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,7 +105,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3799853668171246485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 633baa0eb6c47c04f8ab2bef1345007a, type: 3}
+  m_Script: {fileID: 11500000, guid: c69d5edc41c4e7f4b86fff812b30fd5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballSpeed: 30

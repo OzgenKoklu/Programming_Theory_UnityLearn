@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private Text remainingTimeText;
     [SerializeField] private Text playerScoreText;
+    public GameObject gameOverText;
+    public GameObject replayButton;
 
     public int playerScore;
     public float remainingTime;
@@ -64,9 +66,19 @@ public class GameManager : MonoBehaviour
         } else
         {
             isGameActive = false;
-        }
+            GameOver();
+        } 
     }
 
+    public void GameOver()
+    {
+        gameOverText.SetActive(true);
+        replayButton.SetActive(true);
+    }
+    public void Retry()
+    {
+        SceneManager.LoadScene(1);
+    }
     public void BacktoMainMenu()
     {
         SceneManager.LoadScene(0);

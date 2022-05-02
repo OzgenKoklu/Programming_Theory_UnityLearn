@@ -16,7 +16,7 @@ public class PlayerInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //ABSTRACTION Example
+        // ABSTRACTION Example
         if (Input.GetKeyDown(KeyCode.A))
         {
             moveLeft();
